@@ -65,17 +65,33 @@ These describe how the model makes predictions, not causal effects.
 - The data is a single 2019 snapshot with a random split, so results don't show how the model would perform on future or brand-new listings.
 
 ## How to run
-1. Install the dependencies:
+You need Python 3.9 or newer. Run these commands in a terminal (Terminal on macOS or Linux, Command Prompt or PowerShell on Windows).
+
+1. Clone the repository and move into it:
+
+       git clone https://github.com/ShahrukhP15/Airbnb-Popularity-Model.git
+       cd Airbnb-Popularity-Model
+
+2. (Optional) Create and activate a virtual environment, so the packages don't affect your other projects:
+
+       python -m venv venv
+       source venv/bin/activate        # macOS/Linux
+       venv\Scripts\activate           # Windows
+
+3. Install the dependencies:
 
        pip install pandas numpy scikit-learn lightgbm shap matplotlib seaborn joblib kagglehub jupyter
 
-2. Open and run the notebook. The dataset downloads automatically from Kaggle.
+4. Launch Jupyter and open the notebook:
 
        jupyter notebook airbnb-model.ipynb
+
+5. In Jupyter, choose **Run > Run All Cells**. The dataset downloads automatically from Kaggle the first time you run it.
 
 `model_utils.py` must stay in the same folder as the notebook. Fitted models and results are saved to `artifacts/`, which is not tracked in git.
 
 To browse the results without running anything, view the notebook on GitHub or open `airbnb-model.html` in a browser.
+
 
 ## Project structure
 
