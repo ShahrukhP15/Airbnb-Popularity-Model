@@ -120,4 +120,4 @@ To browse the results without running anything, view the notebook on GitHub or o
 ```
 
 ## Author
-Shahrukh Islam Prithibi. Built as a course project at the University of British Columbia (2023) and revised in 2026 with a leakage-safe pipeline and reproducible setup.
+Shahrukh Islam Prithibi.
